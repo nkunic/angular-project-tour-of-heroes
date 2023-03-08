@@ -7,11 +7,6 @@ import { HEROES } from '../../model/heroes-mock';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroesComponent {
-  // hero = 'Windstorm';
-  //hero: Hero = {
-  //id: 1,
-  //name: 'Windstorm'
-  //};
 
   heroes = HEROES;
 
