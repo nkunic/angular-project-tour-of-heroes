@@ -9,7 +9,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
   imports: [BrowserModule, FormsModule],
   declarations: [AppComponent, HeroesComponent],
   exports: [HeroesComponent],
-  bootstrap: [AppComponent],
-  providers: []
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
