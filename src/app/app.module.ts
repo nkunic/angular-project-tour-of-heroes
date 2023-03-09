@@ -23,7 +23,9 @@ import { MessagesComponent } from './components/messages/messages.component';
     HeroesComponent, 
     HeroDetailComponent
   ],
-  providers: [],
+  providers: [
+    // no need to place any providers due to the `providedIn` flag...
+  ],
   bootstrap: [
     AppComponent
   ]
