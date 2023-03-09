@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -9,25 +10,17 @@ import { HeroDetailComponent } from './components/hero-detail/hero-detail.compon
 import { MessagesComponent } from './components/messages/messages.component';
 
 @NgModule({
-  imports: [
-    BrowserModule, 
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   declarations: [
-    AppComponent, 
-    HeroesComponent, 
+    AppComponent,
+    HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
   ],
-  exports: [
-    HeroesComponent, 
-    HeroDetailComponent
-  ],
+  exports: [HeroesComponent, HeroDetailComponent],
   providers: [
     // no need to place any providers due to the `providedIn` flag...
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
